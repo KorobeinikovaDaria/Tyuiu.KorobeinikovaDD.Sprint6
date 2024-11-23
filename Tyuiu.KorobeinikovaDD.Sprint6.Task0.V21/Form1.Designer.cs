@@ -34,6 +34,9 @@
             label3 = new Label();
             textBoxResult = new TextBox();
             button2 = new Button();
+            pictureBox1 = new PictureBox();
+            label4 = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -46,16 +49,16 @@
             // 
             // textBoxVarA
             // 
-            textBoxVarA.Location = new Point(37, 50);
+            textBoxVarA.Location = new Point(34, 207);
+            textBoxVarA.Multiline = true;
             textBoxVarA.Name = "textBoxVarA";
-            textBoxVarA.Size = new Size(149, 27);
+            textBoxVarA.Size = new Size(167, 51);
             textBoxVarA.TabIndex = 1;
-            textBoxVarA.TextChanged += buttonDone_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(37, 22);
+            label2.Location = new Point(34, 171);
             label2.Name = "label2";
             label2.Size = new Size(149, 20);
             label2.TabIndex = 2;
@@ -64,7 +67,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(37, 102);
+            label3.Location = new Point(239, 171);
             label3.Name = "label3";
             label3.Size = new Size(78, 20);
             label3.TabIndex = 3;
@@ -72,26 +75,47 @@
             // 
             // textBoxResult
             // 
-            textBoxResult.Location = new Point(37, 136);
+            textBoxResult.Location = new Point(239, 207);
+            textBoxResult.Multiline = true;
             textBoxResult.Name = "textBoxResult";
-            textBoxResult.Size = new Size(149, 27);
+            textBoxResult.Size = new Size(172, 51);
             textBoxResult.TabIndex = 4;
-            textBoxResult.TextChanged += buttonHelp_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(37, 194);
+            button2.Location = new Point(491, 94);
             button2.Name = "button2";
-            button2.Size = new Size(94, 29);
+            button2.Size = new Size(212, 117);
             button2.TabIndex = 6;
+            button2.Text = "Вычислить";
             button2.UseVisualStyleBackColor = true;
             button2.Click += buttonDone_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources._2024_11_24_03_33_11;
+            pictureBox1.Location = new Point(34, 57);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(362, 62);
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(34, 34);
+            label4.Name = "label4";
+            label4.Size = new Size(245, 20);
+            label4.TabIndex = 8;
+            label4.Text = "Вычислить значение по формуле:";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label4);
+            Controls.Add(pictureBox1);
             Controls.Add(button2);
             Controls.Add(textBoxResult);
             Controls.Add(label3);
@@ -101,6 +125,7 @@
             Name = "Form1";
             Text = "Form1";
             Load += buttonDone_Click;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -113,5 +138,7 @@
         private Label label3;
         private TextBox textBoxResult;
         private Button button2;
+        private PictureBox pictureBox1;
+        private Label label4;
     }
 }
