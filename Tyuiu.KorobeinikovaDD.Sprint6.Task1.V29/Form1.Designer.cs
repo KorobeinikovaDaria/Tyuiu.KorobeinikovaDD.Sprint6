@@ -72,9 +72,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(32, 234);
             label1.Name = "label1";
-            label1.Size = new Size(158, 20);
+            label1.Size = new Size(88, 20);
             label1.TabIndex = 3;
-            label1.Text = "Введите стартовый X:";
+            label1.Text = "Старт шага:";
             label1.Click += label1_Click;
             // 
             // label2
@@ -82,9 +82,9 @@
             label2.AutoSize = true;
             label2.Location = new Point(280, 234);
             label2.Name = "label2";
-            label2.Size = new Size(155, 20);
+            label2.Size = new Size(94, 20);
             label2.TabIndex = 4;
-            label2.Text = "Введите конечный Х:";
+            label2.Text = "Конец шага:";
             label2.Click += label2_Click;
             // 
             // label3
