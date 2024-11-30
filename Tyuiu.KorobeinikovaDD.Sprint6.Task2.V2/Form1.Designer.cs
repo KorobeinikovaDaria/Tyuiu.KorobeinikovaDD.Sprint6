@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             dataGridView1 = new DataGridView();
             X = new DataGridViewTextBoxColumn();
             f = new DataGridViewTextBoxColumn();
@@ -43,15 +46,17 @@
             label7 = new Label();
             label8 = new Label();
             pictureBox1 = new PictureBox();
+            chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)chart1).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { X, f });
-            dataGridView1.Location = new Point(694, 67);
+            dataGridView1.Location = new Point(673, 67);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(286, 394);
@@ -99,16 +104,17 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.CornflowerBlue;
             button1.Location = new Point(385, 386);
             button1.Name = "button1";
             button1.Size = new Size(106, 71);
             button1.TabIndex = 5;
             button1.Text = "Справка";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             // 
             // buttonDone
             // 
-            buttonDone.BackColor = SystemColors.GradientInactiveCaption;
+            buttonDone.BackColor = Color.Lime;
             buttonDone.Location = new Point(512, 386);
             buttonDone.Name = "buttonDone";
             buttonDone.Size = new Size(135, 71);
@@ -148,7 +154,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(694, 9);
+            label6.Location = new Point(673, 9);
             label6.Name = "label6";
             label6.Size = new Size(113, 20);
             label6.TabIndex = 10;
@@ -157,7 +163,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(694, 44);
+            label7.Location = new Point(673, 44);
             label7.Name = "label7";
             label7.Size = new Size(75, 20);
             label7.TabIndex = 11;
@@ -182,11 +188,27 @@
             pictureBox1.TabIndex = 13;
             pictureBox1.TabStop = false;
             // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            chart1.ChartAreas.Add(chartArea1);
+            chart1.Location = new Point(987, 67);
+            chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.Name = "Series1";
+            chart1.Series.Add(series1);
+            chart1.Size = new Size(572, 390);
+            chart1.TabIndex = 14;
+            chart1.Text = "chart1";
+            title1.Name = "График функции";
+            chart1.Titles.Add(title1);
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1023, 486);
+            ClientSize = new Size(1584, 486);
+            Controls.Add(chart1);
             Controls.Add(pictureBox1);
             Controls.Add(label8);
             Controls.Add(label7);
@@ -204,6 +226,7 @@
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)chart1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -225,5 +248,6 @@
         private DataGridViewTextBoxColumn f;
         private Label label8;
         private PictureBox pictureBox1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }

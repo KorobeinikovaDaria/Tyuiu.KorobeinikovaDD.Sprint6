@@ -1,3 +1,4 @@
+using System.Windows.Forms.DataVisualization.Charting;
 using Tyuiu.KorobeinikovaDD.Sprint6.Task2.V2.Lib;
 namespace Tyuiu.KorobeinikovaDD.Sprint6.Task2.V2
 {
@@ -6,7 +7,9 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task2.V2
         public Form1()
         {
             InitializeComponent();
+            
         }
+       
 
         private void label7_Click(object sender, EventArgs e)
         {
@@ -28,10 +31,25 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task2.V2
 
                 double[] valueArray = new double[len];
                 valueArray = ds.GetMassFunction(startValue, stopValue);
-               
+
+                
+                this.chart1.Titles.Add("График функции");
+
+                this.chart1.ChartAreas[0].AxisX.Title = "Ось Х";
+                this.chart1.ChartAreas[0].AxisY.Title = "Ось Y";
+
+                Series series = new Series
+                {
+                    ChartType = SeriesChartType.Line // Убедитесь, что тип установлен на Line
+                };
+
+                this.chart1.Series.Clear(); // Очистка предыдущих серий
+                this.chart1.Series.Add(series);
+
                 for (int i = 0; i <= len - 1; i++)
                 {
                     this.dataGridView1.Rows.Add(Convert.ToString(startValue), Convert.ToString(valueArray[i]));
+                    this.chart1.Series[0].Points.AddXY(startValue, valueArray[i]);
                     
                     startValue++;
                 }
