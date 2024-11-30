@@ -9,8 +9,6 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task2.V2
             InitializeComponent();
             
         }
-       
-
         private void label7_Click(object sender, EventArgs e)
         {
             buttonDone.BackColor = Color.Green;
@@ -40,10 +38,10 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task2.V2
 
                 Series series = new Series
                 {
-                    ChartType = SeriesChartType.Line // Убедитесь, что тип установлен на Line
+                    ChartType = SeriesChartType.Line 
                 };
 
-                this.chart1.Series.Clear(); // Очистка предыдущих серий
+                this.chart1.Series.Clear(); 
                 this.chart1.Series.Add(series);
 
                 for (int i = 0; i <= len - 1; i++)

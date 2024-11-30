@@ -40,6 +40,7 @@
             label6 = new Label();
             button1 = new Button();
             label7 = new Label();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -136,12 +137,13 @@
             // 
             // button1
             // 
-            button1.Location = new Point(151, 349);
+            button1.BackColor = Color.Lime;
+            button1.Location = new Point(156, 326);
             button1.Name = "button1";
             button1.Size = new Size(159, 64);
             button1.TabIndex = 10;
             button1.Text = "Вычислить";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += buttonDone_Click;
             // 
             // label7
@@ -153,11 +155,23 @@
             label7.TabIndex = 11;
             label7.Text = "Условие:";
             // 
+            // button2
+            // 
+            button2.BackColor = Color.SkyBlue;
+            button2.Location = new Point(12, 393);
+            button2.Name = "button2";
+            button2.Size = new Size(53, 45);
+            button2.TabIndex = 12;
+            button2.Text = "?";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += buttonHelp_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
             Controls.Add(label7);
             Controls.Add(button1);
             Controls.Add(label6);
@@ -192,5 +206,6 @@
         private Label label6;
         private Button button1;
         private Label label7;
+        private Button button2;
     }
 }

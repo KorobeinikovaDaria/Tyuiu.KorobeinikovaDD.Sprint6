@@ -30,5 +30,15 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task0.V21
         {
             MessageBox.Show("Task 0 выполнила студент группы ПКТБ-24-1 Коробейникова Дарья Денисовна");
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
