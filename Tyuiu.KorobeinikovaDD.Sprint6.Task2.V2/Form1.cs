@@ -9,15 +9,6 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task2.V2
             InitializeComponent();
             
         }
-        private void label7_Click(object sender, EventArgs e)
-        {
-            buttonDone.BackColor = Color.Green;
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
         private void buttonDone_Click(object sender, EventArgs e)
         {
             DataService ds = new DataService();
@@ -61,10 +52,6 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task2.V2
             {
                 MessageBox.Show($"Произошла ошибка: {ex.Message}");
             }
-        }
-        private void buttonDone_Mouse(object sender, EventArgs e)
-        {
-            buttonDone.BackColor = Color.Green;
         }
         private void buttonHelp_Click(object sender, EventArgs e)
         {

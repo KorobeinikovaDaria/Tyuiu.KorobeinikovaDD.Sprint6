@@ -45,32 +45,37 @@
             label11 = new Label();
             label12 = new Label();
             dataGridMatrix = new DataGridView();
+            groupBox1 = new GroupBox();
+            groupBox2 = new GroupBox();
+            groupBox3 = new GroupBox();
             ((System.ComponentModel.ISupportInitialize)dataGridRes).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridMatrix).BeginInit();
+            groupBox1.SuspendLayout();
+            groupBox3.SuspendLayout();
             SuspendLayout();
             // 
             // dataGridRes
             // 
             dataGridRes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridRes.Location = new Point(576, 62);
+            dataGridRes.Location = new Point(6, 44);
             dataGridRes.Name = "dataGridRes";
             dataGridRes.RowHeadersWidth = 51;
-            dataGridRes.Size = new Size(263, 297);
+            dataGridRes.Size = new Size(274, 312);
             dataGridRes.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(576, 9);
+            label1.Location = new Point(66, 269);
             label1.Name = "label1";
-            label1.Size = new Size(110, 20);
+            label1.Size = new Size(0, 20);
             label1.TabIndex = 1;
-            label1.Text = "Вывод данных";
+            label1.Click += label1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(576, 39);
+            label2.Location = new Point(6, 21);
             label2.Name = "label2";
             label2.Size = new Size(75, 20);
             label2.TabIndex = 2;
@@ -88,7 +93,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(576, 365);
+            button1.Location = new Point(6, 362);
             button1.Name = "button1";
             button1.Size = new Size(54, 40);
             button1.TabIndex = 4;
@@ -98,9 +103,9 @@
             // 
             // button2
             // 
-            button2.Location = new Point(700, 365);
+            button2.Location = new Point(143, 362);
             button2.Name = "button2";
-            button2.Size = new Size(139, 40);
+            button2.Size = new Size(137, 40);
             button2.TabIndex = 5;
             button2.Text = "Выполнить";
             button2.UseVisualStyleBackColor = true;
@@ -125,7 +130,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(26, 62);
+            label5.Location = new Point(6, 23);
             label5.Name = "label5";
             label5.Size = new Size(213, 20);
             label5.TabIndex = 9;
@@ -134,7 +139,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(26, 88);
+            label6.Location = new Point(4, 48);
             label6.Name = "label6";
             label6.Size = new Size(113, 20);
             label6.TabIndex = 10;
@@ -143,7 +148,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(26, 118);
+            label7.Location = new Point(4, 68);
             label7.Name = "label7";
             label7.Size = new Size(119, 20);
             label7.TabIndex = 11;
@@ -152,7 +157,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(26, 148);
+            label8.Location = new Point(6, 88);
             label8.Name = "label8";
             label8.Size = new Size(111, 20);
             label8.TabIndex = 12;
@@ -161,7 +166,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(26, 181);
+            label9.Location = new Point(4, 108);
             label9.Name = "label9";
             label9.Size = new Size(121, 20);
             label9.TabIndex = 13;
@@ -170,7 +175,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(26, 210);
+            label10.Location = new Point(6, 128);
             label10.Name = "label10";
             label10.Size = new Size(123, 20);
             label10.TabIndex = 14;
@@ -179,7 +184,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(12, 241);
+            label11.Location = new Point(6, 148);
             label11.Name = "label11";
             label11.Size = new Size(204, 20);
             label11.TabIndex = 15;
@@ -188,7 +193,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(12, 261);
+            label12.Location = new Point(6, 168);
             label12.Name = "label12";
             label12.Size = new Size(158, 20);
             label12.TabIndex = 16;
@@ -197,38 +202,74 @@
             // dataGridMatrix
             // 
             dataGridMatrix.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridMatrix.Location = new Point(270, 62);
+            dataGridMatrix.Location = new Point(270, 30);
             dataGridMatrix.Name = "dataGridMatrix";
             dataGridMatrix.RowHeadersWidth = 51;
-            dataGridMatrix.Size = new Size(263, 297);
+            dataGridMatrix.Size = new Size(263, 408);
             dataGridMatrix.TabIndex = 17;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(groupBox2);
+            groupBox1.Controls.Add(label5);
+            groupBox1.Controls.Add(label6);
+            groupBox1.Controls.Add(label12);
+            groupBox1.Controls.Add(label7);
+            groupBox1.Controls.Add(label11);
+            groupBox1.Controls.Add(label8);
+            groupBox1.Controls.Add(label10);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Controls.Add(label9);
+            groupBox1.Location = new Point(14, 23);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(250, 415);
+            groupBox1.TabIndex = 18;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Условие";
+            // 
+            // groupBox2
+            // 
+            groupBox2.Location = new Point(256, 7);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(250, 125);
+            groupBox2.TabIndex = 19;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "groupBox2";
+            // 
+            // groupBox3
+            // 
+            groupBox3.Controls.Add(dataGridRes);
+            groupBox3.Controls.Add(label2);
+            groupBox3.Controls.Add(button2);
+            groupBox3.Controls.Add(button1);
+            groupBox3.Location = new Point(564, 30);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(286, 408);
+            groupBox3.TabIndex = 19;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Вывод данных";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(892, 450);
+            Controls.Add(groupBox3);
+            Controls.Add(groupBox1);
             Controls.Add(dataGridMatrix);
-            Controls.Add(label12);
-            Controls.Add(label11);
-            Controls.Add(label10);
-            Controls.Add(label9);
-            Controls.Add(label8);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
             Controls.Add(linkLabel1);
             Controls.Add(label4);
-            Controls.Add(button2);
-            Controls.Add(button1);
             Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(dataGridRes);
+            MinimumSize = new Size(910, 450);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Спринт 6 | Таск 3 | Вариант 26 | Коробейникова Д.Д.";
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridRes).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridMatrix).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -252,5 +293,8 @@
         private Label label11;
         private Label label12;
         private DataGridView dataGridMatrix;
+        private GroupBox groupBox1;
+        private GroupBox groupBox2;
+        private GroupBox groupBox3;
     }
 }

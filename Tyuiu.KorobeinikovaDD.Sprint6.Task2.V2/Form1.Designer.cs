@@ -79,12 +79,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(19, 9);
+            label1.Location = new Point(36, 9);
             label1.Name = "label1";
             label1.Size = new Size(67, 20);
             label1.TabIndex = 1;
             label1.Text = "Условие";
-            label1.Click += label1_Click;
             // 
             // textboxST
             // 
@@ -122,7 +121,6 @@
             buttonDone.TabIndex = 6;
             buttonDone.Text = "Вычислить";
             buttonDone.UseVisualStyleBackColor = false;
-            buttonDone.BackColorChanged += buttonDone_Mouse;
             buttonDone.Click += buttonDone_Click;
             // 
             // label3
@@ -169,7 +167,6 @@
             label7.Size = new Size(75, 20);
             label7.TabIndex = 11;
             label7.Text = "Результат";
-            label7.Click += label7_Click;
             // 
             // label8
             // 
@@ -208,7 +205,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1584, 486);
+            ClientSize = new Size(1584, 493);
             Controls.Add(chart1);
             Controls.Add(pictureBox1);
             Controls.Add(label8);
@@ -223,8 +220,9 @@
             Controls.Add(textboxST);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
+            MinimumSize = new Size(1600, 540);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Спринт 6 | Таск 2 | Вариант 2 | Коробейникова Д.Д.";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)chart1).EndInit();

@@ -170,7 +170,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 453);
             Controls.Add(button2);
             Controls.Add(label7);
             Controls.Add(button1);
@@ -184,8 +184,9 @@
             Controls.Add(Tablica);
             Controls.Add(textboxEND);
             Controls.Add(textboxST);
+            MinimumSize = new Size(818, 500);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Спринт 6 | Таск 1 | Вариант 29 | Коробейникова Д.Д.";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
