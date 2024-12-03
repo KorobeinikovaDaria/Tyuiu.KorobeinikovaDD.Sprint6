@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             Tablica = new TextBox();
             textboxST = new TextBox();
@@ -51,13 +51,13 @@
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            chart1.ChartAreas.Add(chartArea2);
+            chartArea1.Name = "ChartArea1";
+            chart1.ChartAreas.Add(chartArea1);
             chart1.Location = new Point(430, 119);
             chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Name = "Series1";
-            chart1.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Name = "Series1";
+            chart1.Series.Add(series1);
             chart1.Size = new Size(867, 506);
             chart1.TabIndex = 0;
             chart1.Text = "chart1";
@@ -91,9 +91,9 @@
             // 
             button1.BackColor = Color.FromArgb(0, 192, 0);
             button1.ForeColor = SystemColors.ControlText;
-            button1.Location = new Point(969, 36);
+            button1.Location = new Point(969, 18);
             button1.Name = "button1";
-            button1.Size = new Size(112, 65);
+            button1.Size = new Size(112, 83);
             button1.TabIndex = 4;
             button1.Text = "Выполнить";
             button1.UseVisualStyleBackColor = false;
@@ -102,9 +102,9 @@
             // button2
             // 
             button2.BackColor = Color.FromArgb(0, 192, 192);
-            button2.Location = new Point(1080, 36);
+            button2.Location = new Point(1080, 18);
             button2.Name = "button2";
-            button2.Size = new Size(107, 65);
+            button2.Size = new Size(107, 83);
             button2.TabIndex = 5;
             button2.Text = "Сохранить";
             button2.UseVisualStyleBackColor = false;
@@ -163,9 +163,9 @@
             // button3
             // 
             button3.BackColor = Color.LightSeaGreen;
-            button3.Location = new Point(1187, 36);
+            button3.Location = new Point(1187, 18);
             button3.Name = "button3";
-            button3.Size = new Size(110, 65);
+            button3.Size = new Size(110, 83);
             button3.TabIndex = 8;
             button3.Text = "Справка";
             button3.UseVisualStyleBackColor = false;

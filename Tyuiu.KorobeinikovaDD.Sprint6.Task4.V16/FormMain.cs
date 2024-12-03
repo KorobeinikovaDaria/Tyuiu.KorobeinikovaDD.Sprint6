@@ -77,7 +77,7 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task4.V16
         }
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Task 4 выполнила студент группы ПКТБ-24-1 Коробейникова Дарья Денисовна");
+            MessageBox.Show("Task 4 выполнила студент группы ПКТБ-24-1 Коробейникова Дарья Денисовна", "Cообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void FormMain_Load(object sender, EventArgs e)

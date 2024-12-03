@@ -1,6 +1,6 @@
 ﻿namespace Tyuiu.KorobeinikovaDD.Sprint6.Task3.V26
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         ///  Required designer variable.

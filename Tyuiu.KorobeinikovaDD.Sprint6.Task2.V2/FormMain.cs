@@ -2,9 +2,9 @@ using System.Windows.Forms.DataVisualization.Charting;
 using Tyuiu.KorobeinikovaDD.Sprint6.Task2.V2.Lib;
 namespace Tyuiu.KorobeinikovaDD.Sprint6.Task2.V2
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
             
@@ -55,7 +55,7 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task2.V2
         }
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Task 2 выполнила студент группы ПКТБ-24-1 Коробейникова Дарья Денисовна");
+            MessageBox.Show("Task 2 выполнила студент группы ПКТБ-24-1 Коробейникова Дарья Денисовна", "Cообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

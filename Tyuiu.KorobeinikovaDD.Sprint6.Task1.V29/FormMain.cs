@@ -1,10 +1,9 @@
-using System.Windows.Forms.VisualStyles;
 using Tyuiu.KorobeinikovaDD.Sprint6.Task1.V29.Lib;
 namespace Tyuiu.KorobeinikovaDD.Sprint6.Task1.V29
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
         }
@@ -75,6 +74,11 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task1.V29
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

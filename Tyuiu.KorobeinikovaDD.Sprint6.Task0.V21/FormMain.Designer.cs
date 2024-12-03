@@ -1,6 +1,6 @@
 ﻿namespace Tyuiu.KorobeinikovaDD.Sprint6.Task0.V21
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         ///  Required designer variable.
@@ -38,9 +38,14 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            label7 = new Label();
             button1 = new Button();
+            groupBox1 = new GroupBox();
+            groupBox2 = new GroupBox();
+            groupBox3 = new GroupBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            groupBox3.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -53,7 +58,7 @@
             // 
             // textBoxVarA
             // 
-            textBoxVarA.Location = new Point(34, 307);
+            textBoxVarA.Location = new Point(6, 74);
             textBoxVarA.Multiline = true;
             textBoxVarA.Name = "textBoxVarA";
             textBoxVarA.Size = new Size(167, 51);
@@ -62,7 +67,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(34, 284);
+            label2.Location = new Point(6, 51);
             label2.Name = "label2";
             label2.Size = new Size(149, 20);
             label2.TabIndex = 2;
@@ -72,7 +77,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(480, 284);
+            label3.Location = new Point(6, 34);
             label3.Name = "label3";
             label3.Size = new Size(78, 20);
             label3.TabIndex = 3;
@@ -80,15 +85,15 @@
             // 
             // textBoxResult
             // 
-            textBoxResult.Location = new Point(480, 307);
+            textBoxResult.Location = new Point(6, 57);
             textBoxResult.Multiline = true;
             textBoxResult.Name = "textBoxResult";
-            textBoxResult.Size = new Size(247, 51);
+            textBoxResult.Size = new Size(244, 51);
             textBoxResult.TabIndex = 4;
             // 
             // button2
             // 
-            button2.Location = new Point(480, 364);
+            button2.Location = new Point(60, 113);
             button2.Name = "button2";
             button2.Size = new Size(190, 51);
             button2.TabIndex = 6;
@@ -99,7 +104,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources._2024_11_24_03_33_11;
-            pictureBox1.Location = new Point(34, 86);
+            pictureBox1.Location = new Point(390, 26);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(362, 62);
             pictureBox1.TabIndex = 7;
@@ -109,7 +114,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(34, 63);
+            label4.Location = new Point(6, 23);
             label4.Name = "label4";
             label4.Size = new Size(245, 20);
             label4.TabIndex = 8;
@@ -127,24 +132,14 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(34, 238);
+            label6.Location = new Point(195, 140);
             label6.Name = "label6";
-            label6.Size = new Size(99, 20);
+            label6.Size = new Size(0, 20);
             label6.TabIndex = 10;
-            label6.Text = "Ввод данных";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(480, 238);
-            label7.Name = "label7";
-            label7.Size = new Size(110, 20);
-            label7.TabIndex = 11;
-            label7.Text = "Вывод данных";
             // 
             // button1
             // 
-            button1.Location = new Point(676, 364);
+            button1.Location = new Point(6, 114);
             button1.Name = "button1";
             button1.Size = new Size(51, 51);
             button1.TabIndex = 12;
@@ -152,28 +147,63 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += buttonHelp_Click;
             // 
-            // Form1
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(pictureBox1);
+            groupBox1.Location = new Point(12, 12);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(766, 125);
+            groupBox1.TabIndex = 13;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Условие:";
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(label2);
+            groupBox2.Controls.Add(textBoxVarA);
+            groupBox2.Location = new Point(18, 262);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(492, 170);
+            groupBox2.TabIndex = 14;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Ввод данных";
+            // 
+            // groupBox3
+            // 
+            groupBox3.Controls.Add(textBoxResult);
+            groupBox3.Controls.Add(label3);
+            groupBox3.Controls.Add(button2);
+            groupBox3.Controls.Add(button1);
+            groupBox3.Location = new Point(516, 262);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(262, 170);
+            groupBox3.TabIndex = 15;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Вывод данных";
+            // 
+            // FormMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 453);
-            Controls.Add(button1);
-            Controls.Add(label7);
+            ClientSize = new Size(791, 453);
+            Controls.Add(groupBox3);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
             Controls.Add(label6);
             Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(pictureBox1);
-            Controls.Add(button2);
-            Controls.Add(textBoxResult);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(textBoxVarA);
             Controls.Add(label1);
-            MinimumSize = new Size(818, 500);
-            Name = "Form1";
+            MinimumSize = new Size(800, 500);
+            Name = "FormMain";
             Text = "Спринт 6 | Таск 0 | Вариант 21 | Коробейникова Д.Д.";
             Load += buttonDone_Click;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -190,7 +220,9 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private Label label7;
         private Button button1;
+        private GroupBox groupBox1;
+        private GroupBox groupBox2;
+        private GroupBox groupBox3;
     }
 }
