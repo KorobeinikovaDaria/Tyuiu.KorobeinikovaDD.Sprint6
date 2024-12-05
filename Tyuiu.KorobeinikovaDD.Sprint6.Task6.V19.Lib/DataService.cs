@@ -14,14 +14,14 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task6.V19.Lib
             {
                 // Разбиваем строку на слова
                 var words = line.Split(new[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
-                // Фильтруем слова: должны содержать 'l' и не содержать 'J' и 'i'
-                var filteredWords = words.Where(word =>
-                    word.Contains('l', StringComparison.OrdinalIgnoreCase));
+                // Фильтруем слова: должны содержать 'l'
+                var filteredWords = words.Where(word => word.IndexOf('l', StringComparison.OrdinalIgnoreCase) >= 0);
                 wordsWithL.AddRange(filteredWords);
             }
 
             // Возвращаем результат в виде строки
             return string.Join(" ", wordsWithL);
+
         }
     }
 }
