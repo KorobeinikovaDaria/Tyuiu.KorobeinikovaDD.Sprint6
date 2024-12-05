@@ -16,9 +16,7 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task6.V19.Lib
                 var words = line.Split(new[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
                 // Фильтруем слова: должны содержать 'l' и не содержать 'J' и 'i'
                 var filteredWords = words.Where(word =>
-                    word.Contains('l', StringComparison.OrdinalIgnoreCase) &&
-                    !word.Contains('J', StringComparison.OrdinalIgnoreCase) &&
-                    !word.Contains('i', StringComparison.OrdinalIgnoreCase));
+                    word.Contains('l', StringComparison.OrdinalIgnoreCase));
                 wordsWithL.AddRange(filteredWords);
             }
 
