@@ -6,6 +6,11 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task6.V19.Lib
     {
         public string CollectTextFromFile(string path)
         {
+            if (string.IsNullOrEmpty(path))
+            {
+                throw new ArgumentException("File path cannot be null or empty.", nameof(path));
+            }
+
             StringBuilder result = new StringBuilder();
 
             var lines = File.ReadAllLines(path);
