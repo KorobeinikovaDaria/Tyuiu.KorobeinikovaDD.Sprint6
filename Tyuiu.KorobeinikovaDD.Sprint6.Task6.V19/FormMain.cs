@@ -15,8 +15,7 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task6.V19
         string openFilePath;
         private void buttonDone_Click(object sender, EventArgs e)
         {
-            string str = "l";
-            textBoxResult.Text = ds.CollectTextFromFile(str, openFilePath);
+            textBoxResult.Text = ds.CollectTextFromFile(openFilePath);
         }
         private void buttonOpen_Click(object sender, EventArgs e)
         {

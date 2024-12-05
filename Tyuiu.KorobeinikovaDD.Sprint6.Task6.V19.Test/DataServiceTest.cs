@@ -9,10 +9,10 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task6.V19.Test
         {
             string path = @"C:\DataSprint6\InPutDataFileTask6V19.txt";
             DataService ds = new DataService();
-            string str = "";
+          
 
             string wait = "HqrXl VLjXpq PAlR TwlB GGLDMUi AWkgYPxilmC";
-            string res = ds.CollectTextFromFile(str, path);
+            string res = ds.CollectTextFromFile(path);
 
             Assert.AreEqual(wait, res);
         }
