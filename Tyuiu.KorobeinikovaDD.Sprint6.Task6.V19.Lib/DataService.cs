@@ -6,28 +6,24 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task6.V19.Lib
     {
         public string CollectTextFromFile(string path)
         {
-            if (string.IsNullOrEmpty(path))
-            {
-                throw new ArgumentException("File path cannot be null or empty.", nameof(path));
-            }
-
-            StringBuilder result = new StringBuilder();
-
+            // Читаем все строки из файла
             var lines = File.ReadAllLines(path);
+            var wordsWithL = new List<string>();
 
             foreach (var line in lines)
             {
+                // Разбиваем строку на слова
                 var words = line.Split(new[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
-
-                foreach (var word in words)
-                {
-                    if (word.IndexOf('l', StringComparison.OrdinalIgnoreCase) >= 0)
-                    {
-                        result.Append(word + " ");
-                    }
-                }
+                // Фильтруем слова: должны содержать 'l' и не содержать 'J' и 'i'
+                var filteredWords = words.Where(word =>
+                    word.Contains('l', StringComparison.OrdinalIgnoreCase) &&
+                    !word.Contains('J', StringComparison.OrdinalIgnoreCase) &&
+                    !word.Contains('i', StringComparison.OrdinalIgnoreCase));
+                wordsWithL.AddRange(filteredWords);
             }
-            return result.ToString().Trim();
+
+            // Возвращаем результат в виде строки
+            return string.Join(" ", wordsWithL);
         }
     }
 }
