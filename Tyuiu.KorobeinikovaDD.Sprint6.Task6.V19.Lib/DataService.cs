@@ -6,21 +6,12 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task6.V19.Lib
     {
         public string CollectTextFromFile(string path)
         {
-            // Читаем все строки из файла
-            var lines = File.ReadAllLines(path);
-            var wordsWithL = new List<string>();
+            string fileContent = File.ReadAllText(path);
+            string[] words = fileContent.Split(new[] { ' ', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
 
-            foreach (var line in lines)
-            {
-                // Разбиваем строку на слова
-                var words = line.Split(new[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
-                // Фильтруем слова: должны содержать 'l'
-                var filteredWords = words.Where(word => word.IndexOf('l', StringComparison.OrdinalIgnoreCase) >= 0);
-                wordsWithL.AddRange(filteredWords);
-            }
+            string result = string.Join(" ", words.Where(word => word.Contains('l')));
 
-            // Возвращаем результат в виде строки
-            return string.Join(" ", wordsWithL);
+            return result;
 
         }
     }
