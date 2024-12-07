@@ -11,7 +11,7 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task6.V19.Test
             DataService ds = new DataService();
           
 
-            string wait = "HqrXl VLjXpq PAlR TwlB GGLDMUi AWkgYPxilmC";
+            string wait = "HqrXl PAlR TwlB AWkgYPxilmC";
             string res = ds.CollectTextFromFile(path);
 
             Assert.AreEqual(wait, res);
