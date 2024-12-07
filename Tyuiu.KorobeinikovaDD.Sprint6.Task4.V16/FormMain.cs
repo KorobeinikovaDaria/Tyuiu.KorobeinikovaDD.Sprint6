@@ -20,25 +20,25 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task4.V16
 
                 double[] valueArray = new double[len];
                 valueArray = ds.GetMassFunction(startValue, stopValue);
-                Tablica.Text = "";
+                TextBoxIn.Text = "";
 
-                this.chart1.Titles.Add("График функции");
+                this.chartResult.Titles.Add("График функции");
 
-                this.chart1.ChartAreas[0].AxisX.Title = "Ось Х";
-                this.chart1.ChartAreas[0].AxisY.Title = "Ось Y";
+                this.chartResult.ChartAreas[0].AxisX.Title = "Ось Х";
+                this.chartResult.ChartAreas[0].AxisY.Title = "Ось Y";
 
                 Series series = new Series
                 {
                     ChartType = SeriesChartType.Line
                 };
 
-                this.chart1.Series.Clear();
-                this.chart1.Series.Add(series);
+                this.chartResult.Series.Clear();
+                this.chartResult.Series.Add(series);
 
                 for (int i = 0; i <= len - 1; i++)
                 {
-                    Tablica.AppendText(valueArray[i] + Environment.NewLine);
-                    this.chart1.Series[0].Points.AddXY(startValue, valueArray[i]);
+                    TextBoxIn.AppendText(valueArray[i] + Environment.NewLine);
+                    this.chartResult.Series[0].Points.AddXY(startValue, valueArray[i]);
                     startValue++;
                 }
 
@@ -57,7 +57,7 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task4.V16
             try
             {
                 string path = Path.Combine(new string[] { Path.GetTempPath(), "OutPutFileTask4V16.txt" });
-                File.WriteAllText(path, Tablica.Text);
+                File.WriteAllText(path, TextBoxIn.Text);
 
                 DialogResult dialogResult = MessageBox.Show("Файл\n" + path + " сохранен успешно!\nОткрыть его в блокноте?", "Сообщение", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 

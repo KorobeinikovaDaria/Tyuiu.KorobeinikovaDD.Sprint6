@@ -54,9 +54,9 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task7.V7
                 dataGridViewOut.Columns[i].Width = 50;
             }
 
-            for ( int r = 0; r < rowCount; r++)
+            for (int r = 0; r < rowCount; r++)
             {
-                for ( int c = 0; c < colCount; c++)
+                for (int c = 0; c < colCount; c++)
                 {
                     dataGridViewIn.Rows[r].Cells[c].Value = matrix[r, c];
                 }
@@ -68,7 +68,7 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task7.V7
 
         private void buttonDone_Click(object sender, EventArgs e)
         {
-            int [,] matrix = ds.GetMatrix(openFilePath);
+            int[,] matrix = ds.GetMatrix(openFilePath);
             string[] lines = File.ReadAllLines(openFilePath);
 
             int rowCount = lines.Length;
@@ -103,11 +103,11 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task7.V7
 
             string str = "";
 
-            for ( int i = 0; i < rows; i++)
+            for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)
                 {
-                    if ( j != columns - 1)
+                    if (j != columns - 1)
                     {
                         str = str + dataGridViewOut.Rows[i].Cells[j].Value + ";";
                     }
@@ -120,11 +120,21 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task7.V7
                 str = "";
             }
         }
-      
+
         private void buttonHelp_Click(object sender, EventArgs e)
         {
             FormAbout formAbout = new FormAbout();
             formAbout.ShowDialog();
+        }
+
+        private void dataGridViewIn_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

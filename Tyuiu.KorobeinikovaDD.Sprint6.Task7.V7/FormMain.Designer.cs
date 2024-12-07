@@ -55,11 +55,12 @@
             // 
             // groupBox1
             // 
-            groupBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox1.AutoSize = true;
             groupBox1.Controls.Add(dataGridViewIn);
             groupBox1.Location = new Point(12, 203);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(590, 407);
+            groupBox1.Size = new Size(623, 408);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Ввод:";
@@ -67,19 +68,22 @@
             // dataGridViewIn
             // 
             dataGridViewIn.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewIn.Location = new Point(0, 26);
+            dataGridViewIn.Dock = DockStyle.Fill;
+            dataGridViewIn.Location = new Point(3, 23);
             dataGridViewIn.Name = "dataGridViewIn";
             dataGridViewIn.RowHeadersWidth = 51;
-            dataGridViewIn.Size = new Size(586, 381);
+            dataGridViewIn.Size = new Size(617, 382);
             dataGridViewIn.TabIndex = 0;
+            dataGridViewIn.CellContentClick += dataGridViewIn_CellContentClick;
             // 
             // groupBox2
             // 
-            groupBox2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            groupBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox2.AutoSize = true;
             groupBox2.Controls.Add(dataGridViewOut);
-            groupBox2.Location = new Point(604, 203);
+            groupBox2.Location = new Point(638, 203);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(488, 407);
+            groupBox2.Size = new Size(460, 408);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "Вывод";
@@ -87,10 +91,11 @@
             // dataGridViewOut
             // 
             dataGridViewOut.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewOut.Location = new Point(4, 26);
+            dataGridViewOut.Dock = DockStyle.Fill;
+            dataGridViewOut.Location = new Point(3, 23);
             dataGridViewOut.Name = "dataGridViewOut";
             dataGridViewOut.RowHeadersWidth = 51;
-            dataGridViewOut.Size = new Size(478, 381);
+            dataGridViewOut.Size = new Size(454, 382);
             dataGridViewOut.TabIndex = 1;
             // 
             // buttonOpen
@@ -124,13 +129,13 @@
             buttonCpravka.Name = "buttonCpravka";
             buttonCpravka.Size = new Size(111, 82);
             buttonCpravka.TabIndex = 6;
-            toolTipInfo.SetToolTip(buttonCpravka, "Информация и программе");
+            toolTipInfo.SetToolTip(buttonCpravka, "Информация о программе");
             buttonCpravka.UseVisualStyleBackColor = true;
             buttonCpravka.Click += buttonHelp_Click;
             // 
             // groupBox3
             // 
-            groupBox3.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            groupBox3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             groupBox3.Controls.Add(label1);
             groupBox3.Location = new Point(12, 100);
             groupBox3.Name = "groupBox3";
@@ -141,13 +146,13 @@
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            label1.AutoSize = true;
-            label1.Location = new Point(17, 23);
+            label1.Dock = DockStyle.Fill;
+            label1.Location = new Point(3, 23);
             label1.Name = "label1";
-            label1.Size = new Size(1043, 60);
+            label1.Size = new Size(1074, 71);
             label1.TabIndex = 0;
             label1.Text = resources.GetString("label1.Text");
+            label1.Click += label1_Click;
             // 
             // buttonSave
             // 
@@ -189,7 +194,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1104, 622);
+            ClientSize = new Size(1104, 623);
             Controls.Add(buttonSave);
             Controls.Add(groupBox3);
             Controls.Add(buttonCpravka);
@@ -197,6 +202,7 @@
             Controls.Add(buttonOpen);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
+            MinimumSize = new Size(1122, 670);
             Name = "FormMain";
             Text = "Спринт 6 | Таск 7 | Вариант 7 | Коробейникова Д.Д.";
             groupBox1.ResumeLayout(false);
@@ -204,8 +210,8 @@
             groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridViewOut).EndInit();
             groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

@@ -73,6 +73,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "FormAbout";
+            Load += FormAbout_Load;
             ResumeLayout(false);
             PerformLayout();
         }

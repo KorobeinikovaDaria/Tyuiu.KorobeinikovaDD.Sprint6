@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="buttonOpen.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFAAAABLCAYAAADnAAD1AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAJSNJREFUeF7NfPl/VFXSN//AuI4KQkjYBVlkUUD2HQRxAURhZAcVUZlx3nHGZ1A2
+        vAAADrwBlbxySQAAJSNJREFUeF7NfPl/VFXSN//AuI4KQkjYBVlkUUD2HQRxAURhZAcVUZlx3nHGZ1A2
         lVEH9BlEnVFwGUcFwo7s+75kI5Ct93R30p1OJ92dTmB+qre+de6593anwfF53/fzeX8oTp2qOnXqfG+d
         7d4OLRKJBPl8PmpqaqLa2lqqrKwUvqqqimKxGIVCIdE3NjZSIBCQOvSQRaNRSiaTFA6HRe/xeKi+vp7g
         U/upq6tL8dnQ0EA1NTXk9XqlTTAYpGB1wPSJGNBvdXW16CGDD/QDPyjRh9/vFx4xJZMJaQefTU1JaQu/
@@ -283,16 +283,19 @@
         gg==
 </value>
   </data>
-  <metadata name="toolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="toolTipOpen.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>322, 17</value>
   </metadata>
   <metadata name="openFileDialogTask.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="toolTipDone.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>834, 17</value>
+  </metadata>
   <data name="buttonDone.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFAAAABLCAYAAADnAAD1AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAGkNJREFUeF7dnPmXHcV1x+f/MyhowxLG4fgkdowQtuPk+CSxTZycY1szGgkhwAYh
+        vAAADrwBlbxySQAAGkNJREFUeF7dnPmXHcV1x+f/MyhowxLG4fgkdowQtuPk+CSxTZycY1szGgkhwAYh
         oR0tsTFxkNAy0owQYEC7AFkIIdAsb++3zoz47eZ+bvXtrtfzZpDxguUfvqeq61ZVV337LlXV/d7Q3Nyc
         zM7OSr1el0qlYiDf6/UEGWi321ZWq9UMrVZL5R2rAxqNRiYD3W7X2tFvp9Oxsmq1aqBu3HeSJJkMUJ92
         gHqUeb/ednZ+ztJms2njrVbLJmecyLwt9eO+KfOxcR8vpy3jsL7Te9N3LKdvnxN9UIZsyCvQoXdAZa8A
@@ -407,16 +410,13 @@
         YBwu4x6Q77JBBDKW+fl5+X8x8+S5R0xB3gAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>834, 17</value>
-  </metadata>
-  <metadata name="toolTip3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="toolTipInfo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>950, 17</value>
   </metadata>
-  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="buttonInfo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFAAAABLCAYAAADnAAD1AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAFSZJREFUeF7tXPtzXdV15i9AfjtgmxCwUyCkITQOmEBJh8mUybQ/UMo0fQSaGdLQ
+        vAAADrwBlbxySQAAFSZJREFUeF7tXPtzXdV15i9AfjtgmxCwUyCkITQOmEBJh8mUybQ/UMo0fQSaGdLQ
         pumbtA1gvWUj42AjP2LwIzA2jjuD4zgYHNt66+plSX7JsmRL1suS9bCk+9aVbby6vr3PPmef19W90pXb
         TqqZb+65556799rf/tbaa69zru4g7e/WrVv02Wef/a/BrZuO9zb7SDvWweNwfC9TQP/OP0EgPrh+/Tol
         EgmanJycMyTi3ucnJ6c8ziW7/n8G4OfmzZuCOPV3B8ibmrIGkGkSp2svkbiuHctr0yMu5nFOIp7wPj9b
@@ -509,12 +509,14 @@
         rwoc535boXOh1Ie/2/qPuP+vA/yon3jJP6L/BoeOgdMzeTEtAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Дан файл InPutFileTask6V19.txt который может находится в любом месте на диске. Загрузить файл в textBoxIn через openFileDialog. 
-Вывести слова в которых встречается l в результирующею строку и вывести ее в textBoxOut.
+  <data name="Important.Text" xml:space="preserve">
+    <value>Дан файл InPutFileTask6V19.txt который может находится в любом месте на диске. Загрузить файл в textBoxIn через openFileDialog. Вывести слова в которых встречается l в результирующею строку и вывести ее в textBoxOut.
 </value>
   </data>
-  <metadata name="toolTip3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="toolTipDone.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>834, 17</value>
+  </metadata>
+  <metadata name="toolTipInfo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>950, 17</value>
   </metadata>
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

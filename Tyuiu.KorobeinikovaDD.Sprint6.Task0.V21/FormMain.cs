@@ -14,7 +14,6 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task0.V21
             {
 
                 int x = Convert.ToInt32(textBoxVarA.Text);
-
                 textBoxResult.Text = Convert.ToString(ds.Calculate(x));
             }
             catch (FormatException)

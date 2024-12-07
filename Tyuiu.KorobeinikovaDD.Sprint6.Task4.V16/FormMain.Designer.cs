@@ -28,50 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            Tablica = new TextBox();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            chartResult = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            TextBoxIn = new TextBox();
             textboxST = new TextBox();
             textboxEND = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
+            buttonDone = new Button();
+            buttonSave = new Button();
             groupBox1 = new GroupBox();
             label3 = new Label();
             groupBox2 = new GroupBox();
             label2 = new Label();
             label1 = new Label();
-            button3 = new Button();
+            buttonInfo = new Button();
             groupBox3 = new GroupBox();
-            ((System.ComponentModel.ISupportInitialize)chart1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)chartResult).BeginInit();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
             SuspendLayout();
             // 
-            // chart1
+            // chartResult
             // 
-            chartArea1.Name = "ChartArea1";
-            chart1.ChartAreas.Add(chartArea1);
-            chart1.Location = new Point(430, 119);
-            chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Name = "Series1";
-            chart1.Series.Add(series1);
-            chart1.Size = new Size(867, 506);
-            chart1.TabIndex = 0;
-            chart1.Text = "chart1";
+            chartResult.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            chartArea2.Name = "ChartArea1";
+            chartResult.ChartAreas.Add(chartArea2);
+            chartResult.Location = new Point(430, 119);
+            chartResult.Name = "chartResult";
+            series2.ChartArea = "ChartArea1";
+            series2.Name = "Series1";
+            chartResult.Series.Add(series2);
+            chartResult.Size = new Size(919, 506);
+            chartResult.TabIndex = 0;
+            chartResult.Text = "chart1";
             // 
-            // Tablica
+            // TextBoxIn
             // 
-            Tablica.Dock = DockStyle.Top;
-            Tablica.Location = new Point(3, 23);
-            Tablica.Multiline = true;
-            Tablica.Name = "Tablica";
-            Tablica.ScrollBars = ScrollBars.Vertical;
-            Tablica.Size = new Size(390, 480);
-            Tablica.TabIndex = 1;
-            Tablica.TextChanged += Tablica_TextChanged;
+            TextBoxIn.Dock = DockStyle.Fill;
+            TextBoxIn.Location = new Point(3, 23);
+            TextBoxIn.Multiline = true;
+            TextBoxIn.Name = "TextBoxIn";
+            TextBoxIn.ScrollBars = ScrollBars.Vertical;
+            TextBoxIn.Size = new Size(427, 483);
+            TextBoxIn.TabIndex = 1;
+            TextBoxIn.TextChanged += Tablica_TextChanged;
             // 
             // textboxST
             // 
@@ -87,28 +88,28 @@
             textboxEND.Size = new Size(164, 27);
             textboxEND.TabIndex = 3;
             // 
-            // button1
+            // buttonDone
             // 
-            button1.BackColor = Color.FromArgb(0, 192, 0);
-            button1.ForeColor = SystemColors.ControlText;
-            button1.Location = new Point(969, 18);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 83);
-            button1.TabIndex = 4;
-            button1.Text = "Выполнить";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += buttonDone_Click;
+            buttonDone.BackColor = Color.FromArgb(0, 192, 0);
+            buttonDone.ForeColor = SystemColors.ControlText;
+            buttonDone.Location = new Point(969, 18);
+            buttonDone.Name = "buttonDone";
+            buttonDone.Size = new Size(131, 83);
+            buttonDone.TabIndex = 4;
+            buttonDone.Text = "Выполнить";
+            buttonDone.UseVisualStyleBackColor = false;
+            buttonDone.Click += buttonDone_Click;
             // 
-            // button2
+            // buttonSave
             // 
-            button2.BackColor = Color.FromArgb(0, 192, 192);
-            button2.Location = new Point(1080, 18);
-            button2.Name = "button2";
-            button2.Size = new Size(107, 83);
-            button2.TabIndex = 5;
-            button2.Text = "Сохранить";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += buttonSave_Click;
+            buttonSave.BackColor = Color.FromArgb(0, 192, 192);
+            buttonSave.Location = new Point(1099, 18);
+            buttonSave.Name = "buttonSave";
+            buttonSave.Size = new Size(125, 83);
+            buttonSave.TabIndex = 5;
+            buttonSave.Text = "Сохранить";
+            buttonSave.UseVisualStyleBackColor = false;
+            buttonSave.Click += buttonSave_Click;
             // 
             // groupBox1
             // 
@@ -160,23 +161,25 @@
             label1.TabIndex = 4;
             label1.Text = "Старт шага:";
             // 
-            // button3
+            // buttonInfo
             // 
-            button3.BackColor = Color.LightSeaGreen;
-            button3.Location = new Point(1187, 18);
-            button3.Name = "button3";
-            button3.Size = new Size(110, 83);
-            button3.TabIndex = 8;
-            button3.Text = "Справка";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += buttonHelp_Click;
+            buttonInfo.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            buttonInfo.BackColor = Color.LightSeaGreen;
+            buttonInfo.Location = new Point(1224, 18);
+            buttonInfo.Name = "buttonInfo";
+            buttonInfo.Size = new Size(125, 83);
+            buttonInfo.TabIndex = 8;
+            buttonInfo.Text = "Справка";
+            buttonInfo.UseVisualStyleBackColor = false;
+            buttonInfo.Click += buttonHelp_Click;
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(Tablica);
+            groupBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox3.Controls.Add(TextBoxIn);
             groupBox3.Location = new Point(28, 119);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(396, 504);
+            groupBox3.Size = new Size(433, 509);
             groupBox3.TabIndex = 9;
             groupBox3.TabStop = false;
             groupBox3.Text = "Вывод:";
@@ -185,19 +188,19 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1345, 650);
+            ClientSize = new Size(1382, 653);
             Controls.Add(groupBox3);
-            Controls.Add(button3);
+            Controls.Add(buttonInfo);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(chart1);
-            MaximumSize = new Size(1400, 700);
+            Controls.Add(buttonSave);
+            Controls.Add(buttonDone);
+            Controls.Add(chartResult);
+            MinimumSize = new Size(1400, 700);
             Name = "FormMain";
             Text = "Спринт 6 | Таск 4 | Вариант 16 | Коробейникова Д.Д.";
             Load += FormMain_Load;
-            ((System.ComponentModel.ISupportInitialize)chart1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)chartResult).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
@@ -209,15 +212,15 @@
 
         #endregion
 
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private TextBox Tablica;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartResult;
+        private TextBox TextBoxIn;
         private TextBox textboxST;
         private TextBox textboxEND;
-        private Button button1;
-        private Button button2;
+        private Button buttonDone;
+        private Button buttonSave;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
-        private Button button3;
+        private Button buttonInfo;
         private GroupBox groupBox3;
         private Label label2;
         private Label label1;

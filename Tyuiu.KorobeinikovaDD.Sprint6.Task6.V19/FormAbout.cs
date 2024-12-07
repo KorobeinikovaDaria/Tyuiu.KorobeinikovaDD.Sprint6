@@ -18,8 +18,12 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task6.V19
         }
         private void buttonOK_Click(object sender, EventArgs e)
         {
-            this.Close(); 
+            this.Close();
         }
 
+        private void FormAbout_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

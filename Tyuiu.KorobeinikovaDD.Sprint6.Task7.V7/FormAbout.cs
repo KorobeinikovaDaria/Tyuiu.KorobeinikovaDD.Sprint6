@@ -16,5 +16,10 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task7.V7
         {
             InitializeComponent();
         }
+
+        private void buttonOK_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

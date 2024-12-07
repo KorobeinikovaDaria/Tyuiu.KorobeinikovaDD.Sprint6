@@ -13,10 +13,10 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task5.V21
             DataService ds = new DataService();
             try
             {
-                this.chart1.ChartAreas[0].AxisX.Title = "Îñü Õ";
-                this.chart1.ChartAreas[0].AxisY.Title = "Îñü Y";
+                this.chartOut.ChartAreas[0].AxisX.Title = "Îñü Õ";
+                this.chartOut.ChartAreas[0].AxisY.Title = "Îñü Y";
 
-                chart1.Series[0].Points.Clear();
+                chartOut.Series[0].Points.Clear();
 
                 dataGridViewNums.ColumnCount = 2;
                 dataGridViewNums.Columns[0].Width = 20;
@@ -27,7 +27,7 @@ namespace Tyuiu.KorobeinikovaDD.Sprint6.Task5.V21
                 for (int i = 0; i < numMass.Length; i++)
                 {
                     dataGridViewNums.Rows.Add(Convert.ToString(i), Convert.ToString(numMass[i]));
-                    chart1.Series[0].Points.AddXY(i, numMass[i]);
+                    chartOut.Series[0].Points.AddXY(i, numMass[i]);
                 }
 
             }

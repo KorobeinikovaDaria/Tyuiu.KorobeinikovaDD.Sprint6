@@ -507,9 +507,7 @@
     <value>753, 17</value>
   </metadata>
   <data name="label1.Text" xml:space="preserve">
-    <value>Дан файл InPutFileTask7V7.csv в котором хранится матрица целочисленных значений. Загрузить файл через openFileDialog в объект dataGridViewIn. 
-Изменить в пятой строке нечетные значения на 66. Результат вывести в объект dataGridViewOut. Сохранить результат в файл OutPutFileTask7.csv 
-через saveFileDialog.</value>
+    <value>Дан файл InPutFileTask7V7.csv в котором хранится матрица целочисленных значений. Загрузить файл через openFileDialog в объект dataGridViewIn.  Изменить в пятой строке нечетные значения на 66. Результат вывести в объект dataGridViewOut. Сохранить результат в файл OutPutFileTask7.csv через saveFileDialog.</value>
   </data>
   <data name="buttonSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
